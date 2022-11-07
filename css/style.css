@@ -1,5 +1,43 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 
+/* Global */
 * {
   font-family: "Raleway", sans-serif;
+}
+
+body {
+  margin: 64px 80px 0px 80px;
+}
+
+.bold-text {
+  font-weight: 700;
+}
+
+/* Navbar */
+.nav img {
+  float: left;
+  width: 70px;
+}
+
+.nav ul {
+  list-style-type: none;
+  text-align: right;
+  line-height: 35px;
+}
+
+.nav li {
+  display: inline;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #000000;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.nav a:hover {
+  color: #0065fc;
+  border-top: 2px solid;
+  padding-top: 70px;
 }
