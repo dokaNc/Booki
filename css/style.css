@@ -6,7 +6,7 @@
 }
 
 body {
-  margin: 64px 80px 0px 80px;
+  margin: 56px 80px 0px 80px;
 }
 
 .bold-text {
@@ -14,19 +14,19 @@ body {
 }
 
 /* Navbar */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .nav img {
-  float: left;
-  width: 70px;
+  height: 23px;
 }
 
 .nav ul {
   list-style-type: none;
-  text-align: right;
-  line-height: 35px;
-}
-
-.nav li {
-  display: inline;
+  display: flex;
 }
 
 .nav a {
@@ -55,13 +55,7 @@ body {
   margin-top: 10px;
 }
 
-.input-container {
-  display: flex;
-  width: 100%;
-}
-
 form {
-  /* border: 1px solid #000000; */
   margin-top: 25px;
   display: flex;
 }
