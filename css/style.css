@@ -47,17 +47,9 @@ body {
   margin-top: 70px;
 }
 
-.search-section h1 {
-  margin-bottom: 0px;
-}
-
-.search-section p {
-  margin-top: 10px;
-}
-
 form {
-  margin-top: 25px;
   display: flex;
+  align-items: center;
 }
 
 input[type="search"] {
@@ -78,17 +70,14 @@ input[type="submit"] {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   font-size: 20px;
-  padding: 15px 15px 15px 15px;
+  padding: 16px 15px 16px 15px;
   font-weight: 500;
   cursor: pointer;
 }
 
 .icon-position {
-  align-items: center;
-  display: flex;
   background-color: #d9d9d9;
-  padding-left: 22px;
-  padding-right: 22px;
+  padding: 18px 22px 18px 22px;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   font-size: 19px;
