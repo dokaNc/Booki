@@ -4,9 +4,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Booki</title>
   <script src="https://kit.fontawesome.com/b591e3ce6f.js" crossorigin="anonymous"></script>
+  <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -29,13 +30,52 @@
 
     <form action="">
       <i class="fa-solid fa-location-dot icon-position"></i>
-      <input type="search" name="search" placeholder="Ville">
-      <input type="submit" value="Rechercher">
+      <input type="search" name="search" placeholder="Marseille, France">
+      <div class="search-desktop">
+        <input type="submit" value="Rechercher">
+      </div>
+      <div class="search-mobile">
+        <input type="submit" value="&#xf002;">
+      </div>
     </form>
   </section>
 
+  <section>
+    <div class="filter">
+      <h2>Filtres</h2>
+      <div class="filter-chips">
+        <i class="filter-icon fa-solid fa-money-bill-wave"></i>
+        <p>Économique</p>
+      </div>
+      <div class="filter-chips">
+        <i class="filter-icon fa-solid fa-person"></i>
+        <p>Familial</p>
+      </div>
+      <div class="filter-chips">
+        <i class="filter-icon fa-solid fa-heart"></i>
+        <p>Romantique</p>
+      </div>
+      <div class="filter-chips">
+        <i class="filter-icon fa-solid fa-dog"></i>
+        <p>Animaux autorisés</p>
+      </div>
+    </div>
+  </section>
   <!-- Section 2 (texte nb logement, hebergement ville, hebergement populaire) -->
 
+  <section class="hebergement">
+    <p class="info">Plus de 500 logements sont disponibles dans cette ville</p>
+    <div class="container-card">
+      <div class="container-ville">
+        <h2>Hébergements à Marseille</h2>
+        <div class="ville"></div>
+      </div>
+      <div class="container-popular">
+        <h2>Les plus populaires</h2>
+        <div class="popular"></div>
+      </div>
+    </div>
+  </section>
   <!-- Section 3 (activités ville) -->
 
   <!-- Footer -->
