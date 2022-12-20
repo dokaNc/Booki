@@ -10,6 +10,8 @@ body {
   margin-top: 56px;
   max-width: 1400px;
   /* border: 1px solid black; */
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .bold-text {
@@ -138,6 +140,10 @@ input[type="submit"] {
   margin-bottom: 45px;
 }
 
+figure {
+  margin: 0;
+}
+
 .container-card {
   display: flex;
   grid-gap: 40px;
@@ -163,21 +169,61 @@ input[type="submit"] {
   box-shadow: 0px 0px 5px 0px #00000047;
   border-radius: 15px;
   width: 100%;
-  height: 100px;
   flex: 30%;
 }
 
 .text-ville {
   font-size: 15px;
-  padding-left: 20px;
+  padding: 5px;
+  padding-bottom: 10px;
+}
+
+.text-ville img {
+  width: 100%;
+  object-fit: cover;
+  height: 120px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-bottom: 5px;
+}
+
+.text-ville figcaption,
+p,
+.icon-star {
+  padding-left: 10px;
+}
+
+.text-ville p {
+  margin-top: 7px;
+  margin-bottom: 12px;
+}
+
+.icon-star {
+  color: #0065fc;
+  font-size: 15px;
+}
+
+.icon-grey {
+  color: #f2f2f2;
 }
 
 .container-popular {
   background-color: #d9d9d9;
   border-radius: 15px;
-  height: 200px;
+  height: auto;
   padding: 30px;
   width: 30%;
+}
+
+.fa-chart-line {
+  font-size: 18px;
+  color: #0065fc;
+}
+
+.title-popular {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .popular {
@@ -188,22 +234,35 @@ input[type="submit"] {
   height: 100px;
 }
 
-/* @media screen and (max-width: 1400px) and (min-width: 993px) {
-  body {
-    margin-right: 20px;
-    margin-left: 20px;
-  }
-} */
+.text-popular {
+  font-size: 15px;
+  padding: 5px;
+}
+
+.text-popular figure {
+  display: flex;
+  gap: 10px;
+}
+
+.text-popular img {
+  width: 43%;
+  object-fit: cover;
+  height: 140px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.more {
+  font-size: 18px;
+}
 
 /* Tablette */
 @media screen and (max-width: 992px) and (min-width: 768px) {
   body {
-    /* margin: 56px 80px 0px 80px; */
-    margin: 20px;
-  }
-
-  body {
     margin-top: 56px;
+    margin: 20px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   /* FILTERS */
@@ -245,6 +304,11 @@ input[type="submit"] {
 
 /* Mobile */
 @media screen and (max-width: 767px) {
+  body {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   /* Navbar */
   .nav {
     margin-top: 28px;
@@ -370,6 +434,11 @@ input[type="submit"] {
   }
 
   /* SECTION HEBERGEMENT & POPULAIRE */
+  .info {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
   .container-card {
     flex-direction: column-reverse;
     grid-gap: 0px;
@@ -390,5 +459,9 @@ input[type="submit"] {
     width: auto;
     border-radius: 0px;
     padding: 20px;
+  }
+
+  .ville-card {
+    flex-direction: column;
   }
 }
