@@ -13,6 +13,10 @@ body {
   padding-right: 20px;
 }
 
+main {
+  margin-bottom: 40px;
+}
+
 .bold-text {
   font-weight: 700;
 }
@@ -121,6 +125,10 @@ input[type="submit"] {
   margin-right: 30px;
 }
 
+.filter-chips:hover {
+  background-color: #deebff;
+}
+
 .filter-icon {
   font-size: 18px;
   color: #0065fc;
@@ -134,7 +142,11 @@ input[type="submit"] {
   margin-bottom: 17px;
 }
 
-/* SECTION : Ville & Populaire */
+/* SECTION : HEBERGEMENT - Ville & Populaire */
+.hebergement {
+  margin-bottom: 50px;
+}
+
 .icon-information {
   color: #0065fc;
   text-align: center;
@@ -142,6 +154,11 @@ input[type="submit"] {
   border: 1px solid #d9d9d9;
   width: 27px;
   padding: 5px 0px 5px 0px;
+}
+
+.text-logement {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 figure {
@@ -173,7 +190,17 @@ figure {
   box-shadow: 0px 0px 5px 0px #00000047;
   border-radius: 15px;
   width: 100%;
-  flex: 30%;
+  flex: 29%;
+}
+
+.popular-card {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 30px;
+}
+
+.popular-card .ville {
+  flex: none;
 }
 
 .text-ville {
@@ -244,8 +271,26 @@ p,
 }
 
 .text-popular figure {
+  position: relative;
   display: flex;
   gap: 10px;
+}
+
+.text-popular figcaption h4 {
+  margin-block-end: 0 !important;
+  margin-block-start: 10px !important;
+}
+
+.text-popular figcaption p {
+  padding-left: 0px;
+  font-size: 13px;
+  margin-block-start: 7px !important;
+}
+
+.text-popular figcaption .icon-star {
+  bottom: 0;
+  position: absolute;
+  padding-left: 0px;
 }
 
 .text-popular img {
@@ -258,6 +303,35 @@ p,
 
 .more {
   font-size: 18px;
+}
+
+/* SECTION: Activity */
+.activity-container {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 40px;
+}
+
+.activity-card {
+  box-shadow: 0px 0px 5px 0px #00000047;
+  border-radius: 15px;
+  flex: 20%;
+}
+
+.activity-content {
+  width: 100%;
+}
+
+.activity-content figure img {
+  width: 100%;
+  object-fit: cover;
+  height: 365px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.activity-content figcaption h4 {
+  padding-left: 15px;
 }
 
 /* Tablette */
@@ -303,6 +377,15 @@ p,
 
   .container-popular {
     width: auto;
+  }
+
+  .popular-card .ville {
+    flex: 29%;
+  }
+
+  /* SECTION: Activity */
+  .activity-content figure img {
+    height: 190px;
   }
 }
 
@@ -482,5 +565,24 @@ p,
 
   .ville-card {
     flex-direction: column;
+  }
+
+  /* SECTION: Activity */
+  .activity {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .activity h2 {
+    font-size: 18px;
+  }
+
+  .activity-container {
+    flex-wrap: none;
+    flex-direction: column;
+  }
+
+  .activity-content figure img {
+    height: 150px;
   }
 }
