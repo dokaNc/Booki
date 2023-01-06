@@ -193,6 +193,11 @@ figure {
   flex: 29%;
 }
 
+.hotel a {
+  text-decoration: unset;
+  color: inherit;
+}
+
 .popular-card {
   display: flex;
   flex-wrap: wrap;
@@ -320,6 +325,11 @@ p,
   box-shadow: 0px 0px 5px 0px #00000047;
   border-radius: 15px;
   flex: 20%;
+}
+
+.activity-card a {
+  text-decoration: unset;
+  color: inherit;
 }
 
 .activity-content {
